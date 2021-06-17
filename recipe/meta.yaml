@@ -30,6 +30,7 @@ requirements:
     - pydap
     - python >=3.7
     - siphon
+    - tqdm
 
 test:
   imports:
