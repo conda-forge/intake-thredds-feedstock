@@ -1,5 +1,5 @@
 {% set name = "intake-thredds" %}
-{% set version = "2021.2.17" %}
+{% set version = "2021.6.16" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/intake-thredds-{{ version }}.tar.gz
-  sha256: e10c9081c68a2a47711fd9464a88cd9156fa2f7fb3d19ad292c66db1be2065c0
+  sha256: 4fe1f8f598d75fb438b64a53cc206ff603399c6264cc05e095c11184a587ad04
 
 build:
   number: 0
@@ -30,6 +30,7 @@ requirements:
     - pydap
     - python >=3.7
     - siphon
+    - tqdm
 
 test:
   imports:
@@ -49,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - andersy005
+    - aaronspring
