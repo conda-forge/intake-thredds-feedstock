@@ -1,5 +1,5 @@
 {% set name = "intake-thredds" %}
-{% set version = "2021.6.16" %}
+{% set version = "2022.8.19" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/intake-thredds-{{ version }}.tar.gz
-  sha256: 4fe1f8f598d75fb438b64a53cc206ff603399c6264cc05e095c11184a587ad04
+  sha256: f94d121ed1c72424bef16be73cb347d4d72aac137d318a0c6281cff64ed61b03
 
 build:
   number: 0
