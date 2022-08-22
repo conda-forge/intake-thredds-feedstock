@@ -35,8 +35,8 @@ requirements:
 test:
   imports:
     - intake_thredds
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
   requires:
     - pip
 
