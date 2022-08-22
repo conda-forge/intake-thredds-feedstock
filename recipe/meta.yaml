@@ -41,9 +41,12 @@ test:
     - pip
 
 about:
-  home: https://github.com/NCAR/intake-thredds
-  summary: Intake interface to THREDDS data catalogs.
-  dev_url: https://github.com/NCAR/intake-thredds
+  home: https://github.com/intake/intake-thredds
+  summary: Intake interface to THREDDS data catalogs
+  description: |
+    Intake interface to THREDDS data catalogs
+  doc_url: https://intake-thredds.readthedocs.io/en/latest/
+  dev_url: https://github.com/intake/intake-thredds
   license: Apache-2.0
   license_file: LICENSE
 
