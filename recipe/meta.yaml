@@ -1,5 +1,5 @@
 {% set name = "intake-thredds" %}
-{% set version = "2022.8.19" %}
+{% set version = "2024.3.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/intake-thredds-{{ version }}.tar.gz
-  sha256: f94d121ed1c72424bef16be73cb347d4d72aac137d318a0c6281cff64ed61b03
+  sha256: 282fe789cbee0f9060180ef1507729e09b60686cc7a9dd71f75a9206b74445c8
 
 build:
   number: 0
@@ -18,17 +18,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
-    - setuptools >=30.3.0
+    - python >=3.10
+    - setuptools >=45
     - setuptools_scm
   run:
     - aiohttp >=3.7
     - fsspec >=0.8.5
     - h5netcdf >=0.8.1
-    - intake >=0.6.0
+    - intake >=0.6.6,<2
     - intake-xarray >=0.3
     - pydap
-    - python >=3.7
+    - python >=3.10
     - siphon
     - tqdm
 
