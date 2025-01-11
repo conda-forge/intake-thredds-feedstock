@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "intake-thredds" %}
 {% set version = "2024.3.1" %}
 
@@ -7,18 +8,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/intake-thredds-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/intake-thredds-{{ version }}.tar.gz
   sha256: 282fe789cbee0f9060180ef1507729e09b60686cc7a9dd71f75a9206b74445c8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=45
     - setuptools_scm
   run:
@@ -28,7 +29,7 @@ requirements:
     - intake >=0.6.6,<2
     - intake-xarray >=0.3
     - pydap
-    - python >=3.10
+    - python >={{ python_min }}
     - siphon
     - tqdm
 
@@ -39,6 +40,7 @@ test:
   #   - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/intake/intake-thredds
