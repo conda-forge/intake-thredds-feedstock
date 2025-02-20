@@ -31,6 +31,7 @@ requirements:
     - python >=3.10
     - siphon
     - tqdm
+    - setuptools >=45 # should be removed since it is deprecated: https://setuptools.pypa.io/en/latest/pkg_resources.html
 
 test:
   imports:
