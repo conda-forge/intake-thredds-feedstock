@@ -152,4 +152,5 @@ Feedstock Maintainers
 
 * [@aaronspring](https://github.com/aaronspring/)
 * [@andersy005](https://github.com/andersy005/)
+* [@martindurant](https://github.com/martindurant/)
 
